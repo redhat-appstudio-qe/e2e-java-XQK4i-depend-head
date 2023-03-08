@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: javajava-java-sample-fcoj
+  namespace: e2e-demos-ybtc-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:42e8ee3597a1daf4a763d1995091f7169dd974f80fd8e50200f91d5a5fd4dc3a
+        name: my-java-springboot
+        resources: {}
+status: {}
